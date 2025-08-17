@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tech Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4361ee;
+      --dark: #212529;
+      --light: #f8f9fa;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    nav {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: var(--primary);
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    article {
+      background: white;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    article:hover {
+      transform: translateY(-5px);
+    }
+    
+    article h2 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    
+    article small {
+      display: block;
+      margin-top: 1rem;
+      color: #6c757d;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark);
+      color: white;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+      color: var(--primary);
+    }
+    
+    .subscribe {
+      background: var(--primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+      border-radius: 8px;
+    }
+    
+    .subscribe input {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      width: 300px;
+      margin-right: 0.5rem;
+    }
+    
+    .subscribe button {
+      padding: 0.5rem 1rem;
+      background: var(--dark);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .subscribe button:hover {
+      background: #343a40;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Tech Blog</h1>
+    <p>Sharing my coding journey and tech insights</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <article>
+      <h2>🚀 First Post</h2>
+      <p>Hello! This is my very first blog post. I'm excited to share my coding journey with you all. I'll be posting about web development, programming tips, and my personal projects.</p>
+      <small>Posted on August 17, 2025</small>
+    </article>
+    
+    <article>
+      <h2>💻 Why I Love Coding</h2>
+      <p>Coding is like solving puzzles every day. I enjoy the creative process of building applications from scratch and seeing my ideas come to life. The best part? There's always something new to learn in this ever-evolving field!</p>
+      <small>Posted on August 18, 2025</small>
+    </article>
+    
+    <article>
+      <h2>🔧 My Current Tech Stack</h2>
+      <p>Here are the technologies I'm currently working with:</p>
+      <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+        <li>HTML, CSS, JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+      </ul>
+      <small>Posted on August 19, 2025</small>
+    </article>
+    
+    <div class="subscribe">
+      <h3>📬 Subscribe to my Newsletter</h3>
+      <p>Get the latest posts delivered right to your inbox</p>
+      <form>
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 Harold's Tech Blog. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
