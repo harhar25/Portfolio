@@ -1,0 +1,111 @@
+/* Animation Classes */
+.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+.hero-content.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+.hero-image.animate {
+    animation: slideUp 1s ease 0.3s forwards;
+}
+
+.about-content.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+.skill-category.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+.skill-category:nth-child(1).animate {
+    animation-delay: 0.1s;
+}
+
+.skill-category:nth-child(2).animate {
+    animation-delay: 0.3s;
+}
+
+.skill-category:nth-child(3).animate {
+    animation-delay: 0.5s;
+}
+
+.project-card.animate {
+    animation: fadeIn 1s ease forwards;
+}
+
+.project-card:nth-child(1).animate {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2).animate {
+    animation-delay: 0.3s;
+}
+
+.project-card:nth-child(3).animate {
+    animation-delay: 0.5s;
+}
+
+.timeline-item.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+.timeline-item:nth-child(1).animate {
+    animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2).animate {
+    animation-delay: 0.3s;
+}
+
+.contact-info.animate {
+    animation: slideUp 1s ease forwards;
+}
+
+.contact-form.animate {
+    animation: slideUp 1s ease 0.3s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

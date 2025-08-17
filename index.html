@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of HAROLD JEY MADJOS, Backend Developer">
+    <title>HAROLD JEY MADJOS | Backend Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Meta tags for social sharing -->
+    <meta property="og:title" content="HAROLD JEY MADJOS | Backend Developer">
+    <meta property="og:description" content="Professional portfolio showcasing my work and skills">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://HaroldjeyMadjosPortfolio.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Particle.js Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">[Your Initials]</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact" class="cta-button">Contact</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">[Your Name]</span>
+                    <span class="title">[Your Professional Title]</span>
+                </h1>
+                <p class="hero-description">I build exceptional digital experiences with cutting-edge technology and thoughtful design.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="images/profile.jpg" alt="[Your Name]" class="profile-image">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate [your profession] with [X] years of experience specializing in [your specialties]. My approach combines technical excellence with creative problem-solving to deliver impactful solutions.</p>
+                    <p>When I'm not coding, you can find me [your hobbies/interests]. I believe in continuous learning and staying at the forefront of technology trends.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3>Education</h3>
+                            <p>[Your Degree]</p>
+                            <p>[Your University], [Year]</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Location</h3>
+                            <p>[Your City, Country]</p>
+                            <p>Open to remote work</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="About [Your Name]">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="90">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <!-- Add more languages -->
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="88">
+                            <span>React</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <span>Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <!-- Add more frameworks -->
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <!-- Add more tools -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Projects Section -->
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="opensource">Open Source</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/projects/project1.jpg" alt="E-Commerce Platform">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-links">
+                        <a href="https://example.com" target="_blank" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/example" target="_blank" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>E-Commerce Platform</h3>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                                </svg>
+                                25k+ Users
+                            </span>
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                15k LOC
+                            </span>
+                        </div>
+                    </div>
+                    <p class="project-description">A full-stack e-commerce platform with payment integration, inventory management, and analytics dashboard.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe API</span>
+                    </div>
+                    <div class="project-achievements">
+                        <span class="achievement">Reduced checkout time by 40%</span>
+                        <span class="achievement">Improved conversion by 22%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card" data-category="ai">
+                <div class="project-image">
+                    <img src="images/projects/project2.jpg" alt="AI Content Moderation">
+                    <div class="project-badge">Innovation Award</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" data-project="ai-moderation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            Case Study
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            Research Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>AI Content Moderation</h3>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                98.7% Accuracy
+                            </span>
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                10M+ Processed
+                            </span>
+                        </div>
+                    </div>
+                    <p class="project-description">Deep learning model for real-time content moderation with contextual understanding and multilingual support.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>BERT</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="project-achievements">
+                        <span class="achievement">Reduced false positives by 65%</span>
+                        <span class="achievement">Deployed in 3 languages</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card" data-category="mobile opensource">
+                <div class="project-image">
+                    <img src="images/projects/project3.jpg" alt="Health Tracker App">
+                    <div class="project-badge">Open Source</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            App Store
+                        </a>
+                        <a href="#" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Health Tracker App</h3>
+                        <div class="project-stats">
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                                50k+ Downloads
+                            </span>
+                            <span class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                                4.9 ★ Rating
+                            </span>
+                        </div>
+                    </div>
+                    <p class="project-description">Cross-platform mobile app for health tracking with wearable integration and personalized recommendations.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Dart</span>
+                        <span>HealthKit</span>
+                    </div>
+                    <div class="project-achievements">
+                        <span class="achievement">Featured in App Store</span>
+                        <span class="achievement">100+ Contributors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-footer">
+            <a href="#" class="cta-button">View All Projects</a>
+            <a href="#" class="cta-button secondary">Download Project Portfolio (PDF)</a>
+        </div>
+    </div>
+</section>
+
+<!-- Project Modal -->
+<div class="project-modal" id="project-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+</div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Another Company</h4>
+                        <ul>
+                            <li>Developed and maintained web applications using React and Node.js</li>
+                            <li>Optimized database queries improving performance by 30%</li>
+                            <li>Mentored junior developers in best practices</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Add more experiences as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm currently open to new opportunities, collaborations, or just a friendly chat about technology and innovation.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <span class="icon">✉️</span>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-method">
+                            <span class="icon">📱</span>
+                            <span>+1 (234) 567-890</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link">GitHub</a>
+                        <a href="#" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="#" target="_blank" class="social-link">Twitter</a>
+                        <a href="#" target="_blank" class="social-link">Dev.to</a>
+                    </div>
+                </div>
+                <form class="contact-form" netlify>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">[Your Name]</a>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Explore</h3>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Connect</h3>
+                        <a href="#" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Blog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="#" download>Download Resume</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> [Your Name]. All rights reserved.</p>
+                <p>Made with ❤️ and ☕</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
